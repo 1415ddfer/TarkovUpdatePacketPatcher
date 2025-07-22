@@ -1,0 +1,12 @@
+# 来自 VisualStudio.gitignore 的部分内容
+[Bb]in/
+[Oo]bj/
+[Pp]roperties/
+*.user
+*.suo
+*.cache
+*.nuget.props
+
+.idea
+.vs
+packages

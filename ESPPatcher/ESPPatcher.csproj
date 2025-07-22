@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net9.0-windows</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+
+        <!-- AOT 编译配置 -->
+        <PublishAot>true</PublishAot>
+        <InvariantGlobalization>true</InvariantGlobalization>
+        <TrimMode>link</TrimMode>
+        <SuppressTrimAnalysisWarnings>true</SuppressTrimAnalysisWarnings>
+
+        <!-- 优化配置 -->
+        <OptimizationPreference>Size</OptimizationPreference>
+        <DebuggerSupport>false</DebuggerSupport>
+        <EnableUnsafeUTF7Encoding>false</EnableUnsafeUTF7Encoding>
+        <EventSourceSupport>false</EventSourceSupport>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="SharpZipLib" Version="1.4.2" />
+      <PackageReference Include="System.IO.Hashing" Version="9.0.7" />
+    </ItemGroup>
+
+</Project>
