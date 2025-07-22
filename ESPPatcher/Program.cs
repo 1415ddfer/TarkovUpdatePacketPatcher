@@ -124,7 +124,7 @@ internal static class Program
             {
                 Console.WriteLine("Update failed. Select an option:");
                 Console.WriteLine("1. Perform a full rollback");
-                Console.WriteLine("2. Fix the environment and rerun the updater to resume");
+                Console.WriteLine("2. Exit");
 
                 var choice = Console.ReadLine();
                 if (choice == "1")
